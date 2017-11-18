@@ -170,6 +170,10 @@ int main(int argc, char **argv)
  */
 void eval(char *cmdline) 
 {
+	char *argv[MAXARGS];
+	pardline(cmdline, argv);
+	builtin_cmd(argv);
+
 	return;
 }
 
