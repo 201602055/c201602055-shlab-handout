@@ -1,8 +1,7 @@
 /* 
  * tsh - A tiny shell program with job control
  *
- *201602055
- *이현경
+ *
  * <Put your name and login ID here>
  */
 #include <stdio.h>
@@ -170,10 +169,6 @@ int main(int argc, char **argv)
  */
 void eval(char *cmdline) 
 {
-	char *argv[MAXARGS];
-	pardline(cmdline, argv);
-	builtin_cmd(argv);
-
 	return;
 }
 
